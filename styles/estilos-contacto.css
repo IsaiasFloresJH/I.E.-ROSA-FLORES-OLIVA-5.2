@@ -1,0 +1,591 @@
+
+/* r /////////////////////////////////////////////////
+  //////////Estilos de la pagina contactenos ////////
+////////////////////////////////////////////////////// r */
+
+
+/*TEXTO PRINCIPAL*/
+div.pagcontacto{
+    margin-top: 8%;
+    display:flex;
+    max-width: 95%;
+    justify-content: center;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+  }
+  div.mapa{
+    max-width: 70%;
+    width: 60%;
+    height: 550px;
+  
+  }
+  .maps_google{
+    width: 100%;
+    height: 100%;
+  }
+  div.formcontacto{
+    width: 30%;
+    height: 100%;
+    margin-left: 5%;
+    margin-top: 5%;
+  
+  }
+  h3.tformulario{
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .cuadros{
+    width: 100%;
+    height: 60px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.118);
+    color: white;
+  }
+  
+  .tformulario{
+    font-size: 1.4em;
+    text-align: left;
+    margin: 2%;
+  }
+  .posisioncuadro{
+   text-align: center;
+  }
+  #button{
+    background-color: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0); 
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    font-size: 1.2em; 
+    padding: 10px 20px;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  #button:hover{
+    margin-top: 1%;
+    background-color: rgb(0, 0, 0); 
+    color: rgb(255, 255, 255); 
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    font-size: 1.5em; 
+    padding: 10px 20px;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  
+  /* fin pagina contactenos */
+
+
+
+  
+  /*a //////////////////////////////
+  ///////////Resposibidad//////////
+  /////////////////////////////// */
+  @media (max-width: 320px) {
+    /* Estilos para pantallas con un ancho máximo de 320px (dispositivos móviles muy pequeños) */
+   /*barra de navegacion*/
+   body div.pagcontacto div.mapa{
+    margin-top: 40%;
+}
+        .logo, #namecole, ul{
+            margin-top: 10px;
+        }
+        header nav .checkbtn{
+            display: block;
+        }
+        nav ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #060f2f;
+            top: 80px;
+            left: -150%;
+            text-align: center;
+            transition: all .5s;
+            
+        }
+        header nav ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        header nav ul li a{
+            font-size: 20px;
+        }
+
+        header nav #check:checked ~ ul{
+            left:0;
+        }
+
+        /*barra de navegacion*/
+        .logo, h1.namecole, ul{
+            margin-top: 10px;
+        }
+
+        body header h1.espacio{
+            margin-left: -35%;
+
+        }    
+        body header nav ul li a{
+            font-size: 10px;
+        }
+
+        /*responsibidad paf contactenos*/
+        body div.pagcontacto{
+    
+            display:block;
+            max-width: 100%;
+            justify-content: center;
+            margin-left: 0.5%;
+            margin-right: 0.5%;
+            flex-direction: column;
+        }
+        body div.formcontacto{
+            width: 80%;
+            height: 100%;
+            margin-left: 8%;
+            margin-top: 5%;
+            order: 1;
+        }
+        body div.mapa{
+            
+            margin-left: 40px;
+            max-width: 90%;
+            width: 100%;
+            height: 550px;
+            order: 2;
+            margin-left: 3%;
+        }
+        body div div.mapa{
+            margin-top: 20%;
+        }
+        
+
+
+        /*pie de pagina*/
+        footer {
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .containerfoter {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cuadro {
+            width: 80%;
+            max-width: 350px;
+            margin-bottom: 20px;
+        }
+
+        body div.todonosotros{
+            margin-top: 55%;
+        }
+    }
+    
+    @media (max-width: 480px) {
+    body div.pagcontacto div.mapa{
+        margin-top: 35%;
+    }
+    
+
+    /*pie de pagina*/
+    footer {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .containerfoter {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cuadro {
+        width: 80%;
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+
+    body div.todonosotros{
+        margin-top: 55%;
+    }
+    }
+    
+    @media (max-width: 768px) {
+    /*barra de navegacion*/
+    /*barra de navegacion*/
+    body div.pagcontacto div.mapa{
+        margin-top: 27%;
+    }
+    .logo, #namecole, ul{
+        margin-top: 10px;
+    }
+    header nav .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #060f2f;
+        top: 80px;
+        left: -150%;
+        text-align: center;
+        transition: all .5s;
+        
+    }
+    header nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    header nav ul li a{
+        font-size: 20px;
+    }
+    
+    header nav #check:checked ~ ul{
+        left:0;
+    }
+    
+     /*barra de navegacion*/
+     .logo, h1.namecole, ul{
+        margin-top: 10px;
+    }
+    
+    body header h1.espacio{
+        margin-left: 35%;
+
+    }    
+    body header nav ul li a{
+        font-size: 10px;
+    }
+    
+   /*responsibidad paf contactenos*/
+   body div.pagcontacto{
+    
+    display:block;
+    max-width: 100%;
+    justify-content: center;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    flex-direction: column;
+}
+body div.formcontacto{
+    width: 80%;
+    height: 100%;
+    margin-left: 8%;
+    margin-top: 5%;
+    order: 1;
+}
+body div.mapa{
+    
+    margin-left: 40px;
+    max-width: 90%;
+    width: 100%;
+    height: 550px;
+    order: 2;
+    margin-left: 3%;
+}
+body div div.mapa{
+    margin-top: 25%;
+}
+    
+
+    /*pie de pagina*/
+    footer {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .containerfoter {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cuadro {
+        width: 80%;
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+
+    body div.todonosotros{
+        margin-top: 55%;
+    }
+    }
+    
+        
+    @media (max-width: 858px){
+        /*barra de navegacion*/
+        .logo, #namecole, ul{
+            margin-top: 10px;
+        }
+        header nav .checkbtn{
+            display: block;
+        }
+        nav ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #060f2f;
+            top: 80px;
+            left: -150%;
+            text-align: center;
+            transition: all .5s;
+            
+        }
+        header nav ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        header nav ul li a{
+            font-size: 20px;
+        }
+        
+        header nav #check:checked ~ ul{
+            left:0;
+        }
+        
+         /*barra de navegacion*/
+         .logo, h1.namecole, ul{
+            margin-top: 10px;
+        }
+        
+        body header h1.espacio{
+            margin-left: 35%;
+
+        }    
+        body header nav ul li a{
+            font-size: 10px;
+        }
+        
+       
+        
+        /*responsibidad paf contactenos*/
+        body div.pagcontacto{
+    
+            display:block;
+            max-width: 100%;
+            justify-content: center;
+            margin-left: 0.5%;
+            margin-right: 0.5%;
+            flex-direction: column;
+        }
+        body div.formcontacto{
+            width: 80%;
+            height: 100%;
+            margin-left: 8%;
+            margin-top: 5%;
+            order: 1;
+        }
+        body div.mapa{
+            
+            margin-left: 40px;
+            max-width: 90%;
+            width: 100%;
+            height: 550px;
+            order: 2;
+            margin-left: 3%;
+        }
+        body div div.mapa{
+            margin-top: 20%;
+        }
+
+        /*pie de pagina*/
+        footer {
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .containerfoter {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .cuadro {
+            width: 80%;
+            max-width: 350px;
+            margin-bottom: 20px;
+        }
+    
+        body div.todonosotros{
+            margin-top: 55%;
+        }
+    }
+    
+    @media (max-width: 952px) or (max-width: 1150px){
+        /*barra de navegacion*/
+        .logo, h1.namecole, ul{
+            margin-top: 10px;
+        }
+        body header .logo{
+            height: 30px;
+            padding: 10px;
+        }
+        body header .espacio{
+            margin-left: 5%;
+            margin-right: 5%;
+        }    
+        body header nav ul li a{
+            font-size: 10px;
+        }
+
+         /*responsibidad paf contactenos*/
+        body div.pagcontacto{
+            margin-top: 20%;
+            
+        }
+        
+      
+    }
+
+    @media (max-width: 1000px) {
+        /*barra de navegacion*/
+    /* Estilos para pantallas con un ancho máximo de 1280px (pantallas de escritorio medianas) */
+    
+    .logo, #namecole, ul{
+        margin-top: 10px;
+    }
+    .logo{
+        height: 25px;
+        padding: 10px;
+    }
+    .espacio{
+        margin-left: 2%;
+        margin-right: 2%;
+    }    
+    header nav ul li a{
+        font-size: 15px;
+    }
+    
+     /*responsibidad paf contactenos*/
+    body div.pagcontacto{
+        margin-top: 20%;
+        
+    }
+    }
+
+    @media (max-width: 1024px) {
+        /*barra de navegacion*/
+    /* Estilos para pantallas con un ancho máximo de 1024px (tabletas y pantallas más pequeñas de escritorio) */
+    header .logo, #namecole, ul{
+        margin-top: 10px;
+    }
+    header .logo{
+        height: 30px;
+        padding: 10px;
+    }
+    .espacio{
+        margin-left: 5%;
+        margin-right: 5%;
+    }    
+    header nav ul li a{
+        font-size: 8px;
+    }
+     /*responsibidad paf contactenos*/
+  body div.pagcontacto{
+    margin-top: 12%;
+    
+  }
+   
+    }
+    
+    @media (max-width: 1280px) {
+        /*barra de navegacion*/
+    /* Estilos para pantallas con un ancho máximo de 1280px (pantallas de escritorio medianas) */
+    body div.pagcontacto div.mapa{
+        margin-top: 35%;
+    }
+    .logo, #namecole, ul{
+        margin-top: 10px;
+    }
+    .logo{
+        height: 25px;
+        padding: 10px;
+    }
+    .espacio{
+        margin-left: 5%;
+        margin-right: 5%;
+    }    
+    header nav ul li a{
+        font-size: 8px;
+    }
+    
+    
+  /*responsibidad paf contactenos*/
+  body div.pagcontacto{
+    margin-top: 12%;
+    
+  }
+  
+
+    }
+
+    @media (max-width: 1440px) {
+        /*barra de navegacion*/
+    /* Estilos para pantallas con un ancho máximo de 1440px (pantallas de escritorio más grandes) */
+    .logo, #namecole, ul{
+        margin-top: 10px;
+    }
+    .logo{
+        height: 50px;
+        padding: 10px;
+    }
+    .espacio{
+        margin-left: 5%;
+        margin-right: 5%;
+    }    
+    header nav ul li a{
+        font-size: 15px;
+    }
+     /*responsibidad paf contactenos*/
+  body div.pagcontacto{
+    margin-top: 10%;
+    
+  }
+    
+
+    }
+    
+    @media (min-width: 1441px) {
+        /*barra de navegacion*/
+    /* Estilos para pantallas con un ancho mínimo de 1441px (pantallas de escritorio muy grandes) */
+    .logo, #namecole, ul{
+        margin-top: 10px;
+    }
+    .logo{
+        height: 80px;
+        padding: 10px;
+    }
+    .espacio{
+        margin-left: 7%;
+        margin-right: 7%;
+    }    
+    header nav ul li a{
+        font-size: 20px;
+    }
+ /*responsibidad paf contactenos*/
+ body div.pagcontacto{
+    margin-top: 10%;
+    
+  }
+    
+
+
+
+}
+

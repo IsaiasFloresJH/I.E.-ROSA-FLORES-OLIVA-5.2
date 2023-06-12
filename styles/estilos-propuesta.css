@@ -1,0 +1,475 @@
+
+
+
+/* r /////////////////////////////////////
+  //////////Apartado propuesta matricula //////////
+///////////////////////////////////// r */
+.Todoproma{
+    margin-top: 11%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .tituloProMaTRI{
+    border-bottom: 2px solid white;
+    text-align: justify;
+    font-size: 2em;
+  }
+  .todolistaopciones{
+    max-width: 100%;
+    display: flex;
+  }
+  .listacursos{
+    width: 22%;
+    height: 300px;
+    margin-left: 4.5%;
+    border: 5px solid rgba(4, 93, 153, 0.63);
+    border-radius: 20px;
+    background-color: rgba(9, 16, 61, 0.639);
+    padding: 2%;
+    margin-right: 2%;
+  }
+  .textlista{
+    font-size: 1.2em;
+  }
+  .Horario{
+    width: 55%;
+    height: 300px;
+    margin-left: 2%;
+    border: 5px solid rgba(4, 93, 153, 0.63);
+    border-radius: 20px;
+    background-color: rgba(9, 16, 61, 0.639);
+    padding: 2%;
+    margin-right: 2%;
+  }
+  .tablahorario {
+    border-collapse: collapse;
+    
+  }
+  
+  .tablahorario td {
+    border: 3px solid rgba(255, 255, 255, 0.496);
+    padding: 2px;
+    text-align: center;
+  }
+  
+  .tablahorario td:first-child {
+    font-weight: bold;
+  }
+  
+  .tablahorario td[rowspan] {
+    vertical-align: middle;
+  }
+  
+  
+  
+  .partedeabajoprofes{
+    max-width: 100%;
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 2%;
+  }
+  .profesoresparte1{
+    width: 22%;
+    height: 300px;
+    margin-left: 27%;
+    border: 5px solid rgba(4, 93, 153, 0.63);
+    border-radius: 20px;
+    background-color: rgba(9, 16, 61, 0.639);
+    padding: 2%;
+    margin-right: 2%;
+  }
+  .profesoresparte2{
+    width: 22%;
+    height: 300px;
+    margin-left: 2%;
+    border: 5px solid rgba(4, 93, 153, 0.63);
+    border-radius: 20px;
+    background-color: rgba(9, 16, 61, 0.639);
+    padding: 2%;
+    margin-right: 2%;
+  }
+  
+  table {
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  table td {
+    max-width: 200px; /* Ajusta el valor según tus necesidades */
+    white-space: nowrap; /* Evita que el contenido de la celda se desborde */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+    text-overflow: ellipsis; /* Muestra puntos suspensivos (...) para indicar contenido oculto */
+  }
+  table td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .profesoresparte1 {
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  .profesoresparte1 {
+    max-width: 200px; /* Ajusta el valor según tus necesidades */
+    white-space: nowrap; /* Evita que el contenido de la celda se desborde */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+    text-overflow: ellipsis; /* Muestra puntos suspensivos (...) para indicar contenido oculto */
+  }
+  .profesoresparte1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .profesoresparte2 {
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  .profesoresparte2 {
+    max-width: 200px; /* Ajusta el valor según tus necesidades */
+    white-space: nowrap; /* Evita que el contenido de la celda se desborde */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+    text-overflow: ellipsis; /* Muestra puntos suspensivos (...) para indicar contenido oculto */
+  }
+  .profesoresparte2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .imput{
+    border: 2px solid #0065ff;
+    margin: 0;
+    padding: 3px;
+    width: 40%;
+    margin-left: 30%;
+    border-radius: 10px;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #0065ff, 0 -10px 20px #0065ff, 0 -18px 40px #0065ff;
+    
+}
+.imput:hover{
+    border: 2px solid red;
+}
+.imput:hover .btnenviarform:hover{
+    
+    background-color: crimson;
+    padding: 6px;
+    border-radius: 10px;
+    font-size: 0.9em;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #0065ff, 0 -10px 20px #0065ff, 0 -18px 40px #0065ff;
+    
+}
+
+.btnenviarform{
+    border-radius: 5px;
+    margin: 0;
+    padding: 4px;
+    width: 100%;
+    height: 100%;
+    background-color: #0066ff33;
+    color: white;
+    
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0606, 0 -10px 20px #ff0606, 0 -18px 40px #ff0606;
+    
+}
+
+  
+  /*Fin apartado Propuesta matricula*/
+
+
+  
+  /*a //////////////////////////////
+  ///////////Resposibidad//////////
+  /////////////////////////////// */
+  @media (max-width: 320px) {
+    body div.Todoproma h2.tituloProMaTRI{
+        margin-top: 35%;
+    }
+    
+    .todolistaopciones{
+        display: block;
+        max-width: 100%;
+        
+    }
+    .listacursos, .Horario{
+        margin-bottom: 5%;
+        width: 80%;
+    }
+    .partedeabajoprofes{
+        display: block;
+        max-width: 100%;
+    }
+    .profesoresparte1{
+        margin-bottom: 5%;
+        max-width: 80%;
+        margin-left: 2%;
+    }
+    .profesoresparte2{
+        margin-bottom: 5%;
+        max-width: 80%;
+        margin-left: 2%;
+    }
+    
+}
+    
+    
+    @media (max-width: 480px) {
+        body div.Todoproma h2.tituloProMaTRI{
+            margin-top: 35%;
+        }
+        
+        .todolistaopciones{
+            display: block;
+            max-width: 100%;
+            
+        }
+        .listacursos, .Horario{
+            margin-bottom: 5%;
+            width: 80%;
+        }
+        .partedeabajoprofes{
+            display: block;
+            max-width: 100%;
+        }
+        .profesoresparte1{
+            margin-bottom: 5%;
+            max-width: 80%;
+            margin-left: 2%;
+        }
+        .profesoresparte2{
+            margin-bottom: 5%;
+            max-width: 80%;
+            margin-left: 2%;
+        }
+        
+    }
+    @media (max-width: 768px) {
+        body h2.tituloProMaTRI{
+            margin-top: 20%;
+        }
+        
+        .todolistaopciones{
+            display: block;
+            max-width: 100%;
+            
+        }
+        .listacursos, .Horario{
+            margin-bottom: 5%;
+            width: 80%;
+        }
+        .partedeabajoprofes{
+            display: block;
+            max-width: 100%;
+        }
+        .profesoresparte1{
+            margin-bottom: 5%;
+            max-width: 80%;
+            margin-left: 2%;
+        }
+        .profesoresparte2{
+            margin-bottom: 5%;
+            max-width: 80%;
+            margin-left: 2%;
+        }
+        
+    }
+    
+        
+    @media (max-width: 858px){
+        body h2.tituloProMaTRI{
+            margin-top: 25%;
+        }
+        
+        .todolistaopciones{
+            display: block;
+            max-width: 100%;
+            
+        }
+        .listacursos, .Horario{
+            margin-bottom: 5%;
+            width: 80%;
+        }
+        .partedeabajoprofes{
+            display: block;
+            max-width: 100%;
+        }
+        .profesoresparte1{
+            margin-bottom: 5%;
+            max-width: 80%;
+            margin-left: 2%;
+        }
+        .profesoresparte2{
+            margin-bottom: 5%;
+            max-width: 80%;
+            margin-left: 2%;
+        }
+        
+        
+        
+       
+        
+    }
+    
+    @media (max-width: 952px){
+        /*barra de navegacion*/
+        .logo, h1.namecole, ul{
+            margin-top: 10px;
+        }
+        body header .logo{
+            height: 35px;
+            padding: 10px;
+        }
+        body header .espacio{
+            margin-left: 5%;
+            margin-right: 5%;
+        }    
+        body header nav ul li a{
+            font-size: 10px;
+        }
+        
+        .tablahorario{
+            font-size: 1em;
+        }
+      
+        
+          
+    }
+
+    @media (max-width: 1000px) {
+        /*barra de navegacion*/
+    /* Estilos para pantallas con un ancho máximo de 1280px (pantallas de escritorio medianas) */
+    header .logo, #namecole, ul{
+        margin-top: 10px;
+    }
+    header .logo{
+        height: 30px;
+        padding: 10px;
+    }
+    header .espacio{
+        margin-left: 4%;
+        margin-right: 4%;
+    }    
+    header nav ul li a{
+        font-size: 10px;
+    }
+
+    .tablahorario{
+        font-size: .5em;
+    }
+
+    .tituloProMaTRI{
+        margin-top: 8%;
+    }
+    }
+
+    @media (max-width: 1024px)  {
+        /*barra de navegacion*/
+    /* Estilos para pantallas con un ancho máximo de 1024px (tabletas y pantallas más pequeñas de escritorio) */
+        /*barra de navegacion*/
+    /* Estilos para pantallas con un ancho máximo de 1280px (pantallas de escritorio medianas) */
+    
+    header .logo, #namecole, ul{
+        margin-top: 10px;
+    }
+    header .logo{
+        height: 30px;
+        padding: 10px;
+    }
+    header .espacio{
+        margin-left: 4%;
+        margin-right: 4%;
+    }    
+    header nav ul li a{
+        font-size: 10px;
+    }
+
+    .tablahorario{
+        font-size: .5em;
+    }
+
+    .tituloProMaTRI{
+        margin-top: 8%;
+    }
+    }
+    
+    @media (max-width: 1280px) {
+        /*barra de navegacion*/
+    /* Estilos para pantallas con un ancho máximo de 1280px (pantallas de escritorio medianas) */
+    
+    .logo, #namecole, ul{
+        margin-top: 10px;
+    }
+    .logo{
+        height: 30px;
+        padding: 10px;
+    }
+    .espacio{
+        margin-left: 4%;
+        margin-right: 4%;
+    }    
+    header nav ul li a{
+        font-size: 10px;
+    }
+
+    .tablahorario{
+        font-size: .5em;
+    }
+
+    .tituloProMaTRI{
+        margin-top: 8%;
+    }
+    }
+
+
+    @media (max-width: 1440px) {
+        /*barra de navegacion*/
+    /* Estilos para pantallas con un ancho máximo de 1440px (pantallas de escritorio más grandes) */
+    .logo, #namecole, ul{
+        margin-top: 10px;
+    }
+    .logo{
+        height: 50px;
+        padding: 10px;
+    }
+    .espacio{
+        margin-left: 5%;
+        margin-right: 5%;
+    }    
+    header nav ul li a{
+        font-size: 15px;
+    }
+    
+    .tablahorario{
+        font-size: 1em;
+    }
+
+    }
+    
+    @media (min-width: 1441px) {
+        /*barra de navegacion*/
+    /* Estilos para pantallas con un ancho mínimo de 1441px (pantallas de escritorio muy grandes) */
+    .logo, #namecole, ul{
+        margin-top: 10px;
+    }
+    .logo{
+        height: 80px;
+        padding: 10px;
+    }
+    .espacio{
+        margin-left: 7%;
+        margin-right: 7%;
+    }    
+    header nav ul li a{
+        font-size: 20px;
+    }
+    .tablahorario{
+        font-size: 1.4em;
+    }
+    
+
+}
+
+

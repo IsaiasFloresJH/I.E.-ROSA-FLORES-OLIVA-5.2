@@ -1,0 +1,293 @@
+/* r /////////////////////////////////////
+  //////////Apartado Nosotros //////////
+///////////////////////////////////// r */
+.nosotros {
+  margin-top: 10%;
+  margin-left: 4%;
+  margin-right: 4%;
+  max-width: 100%;
+}
+.Mision {
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  font-size: 1.5em;
+  display: flex;
+  max-width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  height: 20%;
+}
+.textmision {
+  width: 50%;
+  text-align: justify;
+}
+.img {
+  width: 40%;
+}
+.imagen1 {
+  margin-top: 4%;
+  width: 70%;
+  text-align: center;
+  margin-left: 30%;
+}
+
+.icono_mision {
+  height: 50px;
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.text_1 {
+  margin-top: 30px;
+}
+
+.vision {
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 5%;
+  font-size: 1.2em;
+  display: flex;
+  max-width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 20%;
+  margin-bottom: 2%;
+}
+.textvision {
+  width: 50%;
+  text-align: justify;
+}
+
+.imagen2 {
+  margin-top: 10%;
+  border-radius: 20px;
+  width: 65%;
+  margin-left: 10%;
+}
+
+.text_M {
+  margin-left: 60px;
+  margin-top: 10px;
+}
+
+.icono_vision {
+  height: 50px;
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.text_2 {
+  margin-top: 30px;
+}
+
+/*Fin apartado nosotros*/
+
+/*a //////////////////////////////
+  ///////////Resposibidad//////////
+  /////////////////////////////// */
+@media (max-width: 320px) {
+  body div.nosotros div.Mision {
+    margin-top: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  /*barra de navegacion*/
+
+  div.nosotros {
+    margin-top: 40%;
+  }
+  div div.bajar {
+    margin-top: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 858px) {
+  body div.nosotros {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  body div div.Mision,
+  body div div.vision {
+    margin-top: 10%;
+    font-size: 1em;
+    flex-direction: column;
+    height: auto;
+  }
+
+  body div.textmision,
+  body div.textvision {
+    width: 100%;
+  }
+
+  body div.img,
+  body img.imagen1,
+  body img.imagen2 {
+    width: 60%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 952px) {
+  /*barra de navegacion*/
+  .logo,
+  h1.namecole,
+  ul {
+    margin-top: 10px;
+  }
+  body header .logo {
+    height: 35px;
+    padding: 10px;
+  }
+  body header .espacio {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  body header nav ul li a {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  /*barra de navegacion*/
+  /* Estilos para pantallas con un ancho máximo de 1280px (pantallas de escritorio medianas) */
+
+  .logo,
+  #namecole,
+  ul {
+    margin-top: 10px;
+  }
+  .logo {
+    height: 30px;
+    padding: 10px;
+  }
+  .espacio {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  header nav ul li a {
+    font-size: 10px;
+  }
+  /*resposinvidad*/
+  body div div.mision {
+    margin-top: 25%;
+  }
+}
+
+@media (max-width: 1024px) or (max-width: 1154px) {
+  /*barra de navegacion*/
+  /* Estilos para pantallas con un ancho máximo de 1024px (tabletas y pantallas más pequeñas de escritorio) */
+  header .logo,
+  #namecole,
+  ul {
+    margin-top: 10px;
+  }
+  header .logo {
+    height: 30px;
+    padding: 10px;
+  }
+  .espacio {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  header nav ul li a {
+    font-size: 8px;
+  }
+
+  /*resposinvidad*/
+  body div div.mision {
+    margin-top: 15%;
+  }
+}
+
+@media (max-width: 1280px) {
+  /*barra de navegacion*/
+  /* Estilos para pantallas con un ancho máximo de 1280px (pantallas de escritorio medianas) */
+
+  .logo,
+  #namecole,
+  ul {
+    margin-top: 10px;
+  }
+  .logo {
+    height: 30px;
+    padding: 10px;
+  }
+  .espacio {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .imagen1,.imagen2{
+    opacity: 0;
+    float: left;
+    width: 0.5%;
+    margin: 0%;
+    padding: 0%;
+  }
+  header nav ul li a {
+    font-size: 10px;
+  }
+  /*resposinvidad*/
+  /*resposinvidad*/
+  body div.nosotros div.Mision {
+    margin-top: 35%;
+  }
+}
+
+@media (max-width: 1440px) {
+  /*barra de navegacion*/
+  /* Estilos para pantallas con un ancho máximo de 1440px (pantallas de escritorio más grandes) */
+  .logo,
+  #namecole,
+  ul {
+    margin-top: 10px;
+  }
+  .logo {
+    height: 50px;
+    padding: 10px;
+  }
+  .espacio {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  header nav ul li a {
+    font-size: 15px;
+  }
+  /*resposinvidad*/
+  body div.nosotros {
+    margin-top: 10%;
+  }
+}
+
+@media (min-width: 1441px) {
+  /*barra de navegacion*/
+  /* Estilos para pantallas con un ancho mínimo de 1441px (pantallas de escritorio muy grandes) */
+  .logo,
+  #namecole,
+  ul {
+    margin-top: 10px;
+  }
+  .logo {
+    height: 80px;
+    padding: 10px;
+  }
+  .espacio {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  /*resposinvidad*/
+  body div.nosotros div.Mision {
+    margin-top: 14%;
+  }
+}

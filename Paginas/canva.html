@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tablero</title>
+        <link rel="stylesheet" href="../styles/canva.css">
+        <link rel="icon" href="../images/incolegio.png">
+        <link rel="stylesheet" href="../styles/styles-generales.css">
+        <!--Boostrap-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/estilos-index.css">
+
+    </head>
+    <body>
+        <!--Parte del loader-->
+        <div id="loader">
+            <div class="spinner">
+              <div class="double-bounce1"></div>
+              <div class="double-bounce2"></div>
+            </div>
+            <h3 class="title-load">Cargando</h3>
+          </div>
+        <!--Fin parte del loader-->
+
+        <!--barra de navegacion -->
+
+        
+        <header class="header" id="header">
+            <h1> <a href="index.html"><img src="../images/incolegio.png" class="logo" alt="Logo"> </a></h1>
+            <h1 id="namecole" class="namecole">ROSA FLORES <br> DE OLIVA</h1>
+            
+            <h2 class="namealummno"> Juan Isaias Huaman Flores</h2>
+            <nav>
+               <input type="checkbox" id="check">
+               <label for="check" class="checkbtn">
+                  <i class="fas fa-bars"></i>
+               </label>
+                <ul>
+                    <li><a class="Mis_cursos link-active" href="#Mis_cursos">Mis cursos</a></li>
+                    <li  ><a class="btnsalir"  href="Ingresar.html">Cerrar Sesión</a></li>
+               </ul>
+            </nav>
+          </header>
+
+        <!--Fin barra de navegacion -->
+
+        <!--Slider-->
+        <section>
+            <div class="slider">
+                <div class="slider-nav">
+                    <ul>
+                        <li><img class="imgborde imgtransparemte" src="../images/banner2.png" alt=""></li>
+                        <li><img class="imgborde imgtransparemte" src="../images/Creadorop2.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <h1 id="Mis_cursos"><br><br><br></h1>
+            <div class="biblioteca" >
+                <section class="biblioteca-biblioteca">
+                    <h2 class="titulos">Tablero</h2>
+                    <div class="biblioteca-biblioteca__contenido">
+                        <li class="bbteca">
+                            <h3 class="bbteca-titulo">MATEMÁTICAS</h3>
+                            <img class="bbteca-img imgborde" src="../images/img-bbteca/matematica.jpg">
+                            <button class="btn-Ingresar">Ingresar</button>
+                        </li>
+                        
+                        <li class="bbteca">
+                            <h3 class="bbteca-titulo">FÍSICA</h3>
+                            <img class="bbteca-img imgborde" src="../images/img-bbteca/fisica.jpg">
+                            <button class="btn-Ingresar">Ingresar</button>
+                        </li>
+        
+                        <li class="bbteca">
+                            <h3 class="bbteca-titulo">COMUNICACIÓN</h3>
+                            <img class="bbteca-img imgborde" src="../images/img-bbteca/comunicacion.jpg">
+                            <button class="btn-Ingresar">Ingresar</button>
+                        </li>
+                        <li class="bbteca">
+                            <h3 class="bbteca-titulo">CIENCIA SOCIALES</h3>
+                            <img class="bbteca-img imgborde" src="../images/img-bbteca/cienciaSociales.jpg">
+                            <button class="btn-Ingresar">Ingresar</button>
+                        </li>
+        
+                        <li class="bbteca">
+                            <h3 class="bbteca-titulo">ARTE</h3>
+                            <img class="bbteca-img imgborde" src="../images/img-bbteca/artejpg.jpg">
+                            <button class="btn-Ingresar">Ingresar</button>
+                        </li>
+                        <li class="bbteca">    
+                            <h3 class="bbteca-titulo">EPT</h3>
+                            <img class="bbteca-img imgborde" src="../images/img-bbteca/EPT.webp">
+                            <button class="btn-Ingresar">Ingresar</button>
+                        </li>
+                        <li class="bbteca"> 
+                            <h3 class="bbteca-titulo">RELIGIÓN</h3>
+                            <img class="bbteca-img imgborde" src="../images/img-bbteca/religion.jpeg">
+                            <button class="btn-Ingresar">Ingresar</button>
+                        </li>
+    
+                        <li class="bbteca"> 
+                            <h3 class="bbteca-titulo">CTA</h3>
+                            <img class="bbteca-img imgborde" src="../images/img-bbteca/cta.jpg">
+                            <button class="btn-Ingresar">Ingresar</button>
+                        </li>
+    
+                        <li class="bbteca"> 
+                            <h3 class="bbteca-titulo">DPCC</h3>
+                            <img class="bbteca-img imgborde" src="../images/img-bbteca/dpcc.jpg">
+                            <button class="btn-Ingresar">Ingresar</button>
+                        </li>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <!--lOS SCRIPT NO SE TE OCURRA MOVERLO-->
+        <script src="../JS/script.js"></script>
+        <script src="../JS/vendor/jquery-2.1.3.js"></script>
+        <script src="../JS/vendor/bootstrap.js"></script>
+        <script src="../JS/vendor/modernizr.custom.js"></script>
+        <script src="../JS/vendor/classie.js"></script>
+        <script src="../JS/vendor/menu-top.js"></script>
+        <script src="../JS/vendor/nav-active.js"></script>
+        <script src="../JS/vendor/jquery.easing.js"></script>
+        <script src="../JS/vendor/scripts.js"></script>
+        <script src="../JS/vendor/jquery.magnific-popup.min.js"></script>
+        <script src="../JS/vendor/wow.min.js"></script>
+        <script src="../JS/vendor/jquery-parallax.js"></script>
+        <script src="../JS/vendor/isotope.pkgd.min.js"></script>
+        <script src="../JS/vendor/isotope-jquery.js"></script>
+    </body>
+</html>

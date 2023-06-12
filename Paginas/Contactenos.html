@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contactenos</title>
+	<link rel="stylesheet" href="../styles/estilos-contacto.css">
+	<link rel="icon" href="../images/incolegio.png">
+	<link rel="stylesheet" href="../styles/styles-generales.css">
+	<!--Boostrap-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../styles/estilos-index.css">
+</head>
+<body>
+		<div id="loader">
+			<div class="spinner">
+			  <div class="double-bounce1"></div>
+			  <div class="double-bounce2"></div>
+			</div>
+			<h3 class="title-load">Cargando</h3>
+		  </div>
+		  
+	<!--barra de navegacion -->
+	 <!--barra de navegacion -->
+	 <header class="header" id="header">
+		<h1> <a href="index.html"><img src="../images/incolegio.png" class="logo" alt="Logo"> </a></h1>
+		<h1 id="namecole" class="namecole">ROSA FLORES <br> DE OLIVA</h1>
+		<h1 class="espacio"></h1>
+		<nav>
+		   <input type="checkbox" id="check">
+		   <label for="check" class="checkbtn">
+			  <i class="fas fa-bars"></i>
+		   </label>
+			<ul>
+			  <li ><a href="../index.html">INICIO</a></li>
+			  <li><a href="nosotros.html">NOSOTROS</a></li>
+			  <li><a class="proi" href="PropuestaInstiucioanl.html"><center>PROPUESTA <br> INSTITUCIONAL</center> </a></li>
+			  <li><a href="Matricula.html">MATRICULA</a></li>
+			  <li class="link-active"><a href="Contactenos.html">CONTACTO</a></li>
+			  <li  ><a class="ri link-activeri"  href="Ingresar.html">SIGN IN</a></li>
+		   </ul>
+		</nav>
+	  </header>
+  
+<!--Fin barra de NAVEGACION-->
+
+<!--inicio de la parte de mapa-->
+
+		<div class="pagcontacto">
+
+			<div class="mapa">
+				
+				<iframe  class ="maps_google"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.0037571932594!2d-79.86922390321044!3d-6.7693943999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904ceefc2a21cc4f%3A0x71ba9660bf6e99c1!2sColegio%20Nacional%20Rosa%20Flores%20De%20Oliva!5e0!3m2!1ses-419!2spe!4v1682099491688!5m2!1ses-419!2spe"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			
+			<div class="formcontacto">
+				<h3 class="tformulario">Déjanos tus datos de contacto:</h3>
+				<form method="POST" action="datos.sql">
+						<section class="tformulario">
+							<input  class="cuadros" type="text" name="nombre" size="100" placeholder="Tu Nombre">
+							<input  class="cuadros" type="text" name="apellido" size="100" placeholder="Tus Apellidos" >
+							<input  class="cuadros"type="email" name="email" size="100" placeholder="Tu Correo">
+							<input  class="cuadros"type="text" name="telefono" size="100"maxlength="15"placeholder=" Tu Telefono">	
+							<textarea class ="cuadros" cols="30" rows="5" type="text" placeholder="Tu mensaje..."></textarea>
+						</section>	
+						<div class="posisioncuadro">
+						<input id ="button"type="submit" name="envio" values="ENVIAR MENSAJE." >
+						</div>
+				</form>
+				</div>
+		</div>
+		<!--Fin de mapa-->
+
+
+
+    <!--Footer o pie de pagina-->
+
+	<footer>
+		<div class="containerfoter">
+			  <div class="col-xl-2 cuadro">
+				 <p class="white"> <strong>Mapa del Sitio</strong> </p>
+				 <ul class="">
+					<li class=" small">Inicio</li>
+					<li class=" small">Propuesta</li>
+					<li class=" small">Matricula</li>
+					<li class=" small">Contacto</li>
+	 
+					<li class=" small">Registro</li>
+					<li class=" small">Servicios</li>
+					<li class=" small">Terminos y condiciones</li>
+				 </ul>
+			  </div>
+			  <div class="imgfooter cuadro cuadro2">
+				 <img src="../images/incolegio.png" alt="">
+	 
+			  </div>
+			  <div class="col-xl-4 cuadro">
+				 <div class="white"><strong>Contacto Institucional:</strong></div>
+				 <ul class="">
+					<li class="small">(074)494716</li>
+					<li class="small">Ierosafloressec@hotmail.com</li>
+				 </ul>
+				 <br>
+				 <!--aqui va los iconos de redes sociales esto es solo un ejemplo temporal-->
+				 <p class="white"><strong>Redes de desarrolladores:</strong></p>
+				 <ul class="social-networks">
+					<li> <a href="https://www.facebook.com/rosa.f.deoliva"><i class="fab fa-facebook"></i></a> </li>
+               		<li> <a href="https://wa.me/+51924747947"><i class="fab fa-whatsapp"></i></a></li>
+               		<li> <a href="https://github.com/IsaiasFloresJH"><i class="fab fa-github"></i></a></li>  
+				 </ul>
+			  </div>
+		</div>
+	 
+	 </footer>
+	 
+<div class="copy">
+	<div class="containercopy">
+		  <div class="col">
+			 
+			 <div class="small">
+				&copy; 2023 Todos los Derechos Reservados <a href="#" class="copycole">Colegio ROSA FLORES DE OLIVA</a>
+			 </div>
+		   
+		  </div>
+	</div>
+ </div>
+
+
+		<!--lOS SCRIPT NO SE TE OCURRA MOVERLO-->
+		<script src="../JS/script.js"></script>
+		<script src="../JS/vendor/jquery-2.1.3.js"></script>
+		<script src="../JS/vendor/bootstrap.js"></script>
+		<script src="../JS/vendor/modernizr.custom.js"></script>
+		<script src="../JS/vendor/classie.js"></script>
+		<script src="../JS/vendor/menu-top.js"></script>
+		<script src="../JS/vendor/nav-active.js"></script>
+		<script src="../JS/vendor/jquery.easing.js"></script>
+		<script src="../JS/vendor/scripts.js"></script>
+		<script src="../JS/vendor/jquery.magnific-popup.min.js"></script>
+		<script src="../JS/vendor/wow.min.js"></script>
+		<script src="../JS/vendor/jquery-parallax.js"></script>
+		<script src="../JS/vendor/isotope.pkgd.min.js"></script>
+		<script src="../JS/vendor/isotope-jquery.js"></script>
+	</body>
+</html>

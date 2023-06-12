@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matricula</title>
+  <link rel="stylesheet" href="../styles/estilos-matricula.css">
+  <link rel="icon" href="../images/incolegio.png"> 
+  <link rel="stylesheet" href="../styles/styles-generales.css">
+	<!--Boostrap-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/estilos-index.css">
+
+</head>
+
+<body>   
+  <div id="loader">
+    <div class="spinner">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+    </div>
+    <h3 class="title-load">Cargando</h3>
+  </div>
+  <!--barra de navegacion -->
+  <header class="header" id="header">
+		<h1> <a href="index.html"><img src="../images/incolegio.png" class="logo" alt="Logo"> </a></h1>
+		<h1 id="namecole" class="namecole">ROSA FLORES <br> DE OLIVA</h1>
+		<h1 class="espacio"></h1>
+		<nav>
+		   <input type="checkbox" id="check">
+		   <label for="check" class="checkbtn">
+			  <i class="fas fa-bars"></i>
+		   </label>
+			<ul>
+			  <li ><a href="../index.html">INICIO</a></li>
+			  <li><a href="nosotros.html">NOSOTROS</a></li>
+			  <li ><a class="proi" href="PropuestaInstiucioanl.html"><center>PROPUESTA <br> INSTITUCIONAL</center> </a></li>
+			  <li class="link-active"><a href="Matricula.html">MATRICULA</a></li>
+			  <li ><a href="Contactenos.html">CONTACTO</a></li>
+			  <li  ><a class="ri link-activeri"  href="Ingresar.html">SIGN IN</a></li>
+		   </ul>
+		</nav>
+	  </header>
+      
+  <!--Fin barra de NAVEGACION-->
+
+  <div class="espacio">
+    <h2 class="tituloma tmatri"><center>PROCESO DE MATRICULA 2023 </center></h2>
+
+    <div class="espaciomatriputnos">
+      <div class="puntos">
+        <section class="txt-1">
+          <h2 class="tmatri">Puntos a tener en cuenta:</h2>
+          
+          <ol>
+            <li>Ser estudiante promovido de grado.</li>
+            <li>No ser repitente.</li>
+            <li>Los niños de 3, 4 y 5 niños de edad, para el Nivel Inicial y, los que ingresan a 1° grado de <br>Primaria, deben cumplir con la edad requerida hasta el 31 de marzo del presente año.</li>
+          </ol>
+        </section>
+
+        <aside class="txt-2">
+          <h2 class="tmatri">Documentos para matricula.</h2>
+          
+          <ol>
+            <li>Copia del DNI, pasaporte o Carnet de Extranjería</li>
+            <li>Copia del último reporte de notas (libreta) o informe de <br>progreso del colegio de procedencia</li>
+            <li>Resolución de traslado del colegio de procedencia.</li>
+            <li>Constancia de Conducta</li>
+          </ol>
+        </aside>
+      </div>
+    </div>
+      
+        <div class="datos">
+          
+        <h2 class="tmatri"><center>Datos para la matricula</center></h2>
+
+        </div>
+    </div>
+  <div class="todo"> 
+
+    <section class="apoderado">
+      <fieldset>
+
+        <center>DATOS DEL APODERADO</center> <br>
+        <h3>Nombre del apoderado(a):</h3>
+        <label for="Nombre"></label> <input id="Nombre" type="text" name="Nombre" size="30" maxlength="20"><br><br>
+
+        <h3>Apellidos:</h3>
+        <label for="Apellidos"></label> <input id="Apellidos" type="text" name="Apellidos" size="30" maxlength="20"><br><br>
+
+        <h3>Sexo:</h3>
+        <input type="radio" name="sexo" value="Masculino">Masculino<br>
+        <input type="radio" name="sexo" value="Femenino">Femenino<br><br>
+
+        <h3><label for="Direccion">Ingrese su Direccion:</label></h3>
+        <input id="Direccion" type="text" name="Direccion" size="30" maxlength="50"><br><br>
+
+        <h3><label for="Correo">Ingrese su Correo Electronico:</label></h3>
+        <input id="Correo" type="text" name="Correo" size="30" maxlength="50"><br><br>
+
+
+        <h3>Fecha de Nacimiento:</h3>
+        <label for="Nacimiento"></label> <input id="Nacimiento" type="text" name="Nacimiento" size="10"
+          maxlength="10"><br><br>
+
+        <h3>Ingrese su DNI:</h3>
+        <label for="DNI"></label> <input id="DNI" type="text" name="DNI" size="10" maxlength="7"><br><br>
+
+        <h3>Turno al que desea poner al estudiante:</h3><br>
+        <select><br>
+          <option>Mañana</option>
+          <option>Tarde</option>
+        </select><br><br>
+
+        <h4>Observaciones:</h4>
+        <textarea cols="30" rows="5"></textarea>
+        <br /><br />
+      </fieldset> 
+    </section>
+
+
+    <section class="alumno">
+      <fieldset>
+        <center>DATOS DEL ALUMNO(a):</center> <br>
+        <h3>Nombre del Alumno(a):</h3>
+        <label for="Nombre"></label> <input id="Nombre" type="text" name="Nombre" size="30" maxlength="20"><br><br>
+
+        <h3>Apellidos:</h3>
+        <label for="Apellidos"></label> <input id="Apellidos" type="text" name="Apellidos" size="30" maxlength="20"><br><br>
+
+        <h3>Sexo:</h3><br>
+        <input type="radio" name="sexo" value="Masculino">Masculino<br />
+        <input type="radio" name="sexo" value="Femenino">Femenino<br><br>
+
+
+        <h3>Fecha de Nacimiento:</h3>
+        <label for="Nacimiento"></label> <input id="Nacimiento" type="text" name="Nacimiento" size="10"
+          maxlength="10"><br><br>
+
+        <h3>Ingrese su DNI:</h3>
+        <label for="DNI"></label> <input id="DNI" type="text" name="DNI" size="10" maxlength="7"><br><br><br>
+
+        <h3>Año que cursa:</h3>
+        <select><br>
+          <option>--Seleccione--</option>
+          <option>1ero</option>
+          <option>2do</option>
+          <option>3do</option>
+          <option>4do</option>
+          <option>5do</option>
+        </select><br /><br />
+
+        <h3>Incapacidad Fisica:</h3>
+        <select><br>
+          <option>--Seleccione--</option>
+          <option>Si</option>
+          <option>No</option>
+        </select><br><br>
+        <h4>Si la respuesta es "SI", Cual es?</h4>
+        <textarea cols="30" rows="5"></textarea>
+        </fieldset>
+
+      </section>
+  </div>
+
+    <div class="imput">
+      <input class="btnenviarform" type="submit" name="envio" value="ENVIAR FORMULARIO">
+    </div>
+
+
+    <!--Footer o pie de pagina-->
+
+    <footer>
+      <div class="containerfoter">
+          <div class="col-xl-2 cuadro">
+           <p class="white"> <strong>Mapa del Sitio</strong> </p>
+           <ul class="">
+            <li class=" small">Inicio</li>
+            <li class=" small">Propuesta</li>
+            <li class=" small">Matricula</li>
+            <li class=" small">Contacto</li>
+     
+            <li class=" small">Registro</li>
+            <li class=" small">Servicios</li>
+            <li class=" small">Terminos y condiciones</li>
+           </ul>
+          </div>
+          <div class="imgfooter cuadro cuadro2">
+           <img src="../images/incolegio.png" alt="">
+     
+          </div>
+          <div class="col-xl-4 cuadro">
+           <div class="white"><strong>Contacto Institucional:</strong></div>
+           <ul class="">
+            <li class="small">(074)494716</li>
+            <li class="small">Ierosafloressec@hotmail.com</li>
+           </ul>
+           <br>
+           <!--aqui va los iconos de redes sociales esto es solo un ejemplo temporal-->
+           <p class="white"><strong>Redes de desarrolladores:</strong></p>
+           <ul class="social-networks">
+            <li> <a href="https://www.facebook.com/rosa.f.deoliva"><i class="fab fa-facebook"></i></a> </li>
+            <li> <a href="https://wa.me/+51924747947"><i class="fab fa-whatsapp"></i></a></li>
+            <li> <a href="https://github.com/IsaiasFloresJH"><i class="fab fa-github"></i></a></li> 
+           </ul>
+          </div>
+      </div>
+     
+     </footer>
+     
+  <div class="copy">
+    <div class="containercopy">
+        <div class="col">
+         
+         <div class="small">
+          &copy; 2023 Todos los Derechos Reservados <a href="#" class="copycole">Colegio ROSA FLORES DE OLIVA</a>
+         </div>
+         
+        </div>
+    </div>
+   </div>
+
+
+    <script src="../JS/script.js"></script>
+  <script src="../JS/vendor/jquery-2.1.3.js"></script>
+  <script src="../JS/vendor/bootstrap.js"></script>
+  <script src="../JS/vendor/modernizr.custom.js"></script>
+  <script src="../JS/vendor/classie.js"></script>
+  <script src="../JS/vendor/menu-top.js"></script>
+  <script src="../JS/vendor/nav-active.js"></script>
+  <script src="../JS/vendor/jquery.easing.js"></script>
+  <script src="../JS/vendor/scripts.js"></script>
+  <script src="../JS/vendor/jquery.magnific-popup.min.js"></script>
+  <script src="../JS/vendor/wow.min.js"></script>
+  <script src="../JS/vendor/jquery-parallax.js"></script>
+  <script src="../JS/vendor/isotope.pkgd.min.js"></script>
+  <script src="../JS/vendor/isotope-jquery.js"></script>
+</body>
+
+
+</html>

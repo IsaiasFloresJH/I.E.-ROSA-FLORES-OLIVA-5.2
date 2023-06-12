@@ -1,0 +1,437 @@
+/* r ////////////////////////////////////
+ Estilos generales
+///////////////////////////////////// r*/
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    
+  }
+  body{
+  
+    margin: 0;
+    margin-top: 0;
+    background: url(../images/fondo3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-top: 0;
+  }
+
+  
+
+/*----- Page Loader -----*/
+#loader {
+    background: #000000;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+#loader h3{
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color:rgb(97, 133, 195);
+  font-weight: 700;
+  letter-spacing: 1px;
+  top: calc(50% + 5px);
+  left:2px;
+  text-align: center;
+  position: relative;
+  margin: 0px auto;
+}
+.spinner {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin: 0px auto;
+  top: calc(50% - 20px);
+}
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgb(82, 70, 155);
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+/*Fin loader page*/
+
+
+/* r /////////////////////////////////////
+   Estilos de la barra de navegacion
+///////////////////////////////////// r */
+
+  
+
+.checkbtn{
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+a{
+  color: #57abb8;
+  text-decoration: none;
+
+}
+a:hover{
+  color: rgb(255, 153, 0);
+}
+
+header,section#principal, footer{
+  background-color: rgba(0, 47, 73, 0.09);
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+header .header.scrolled {
+  background-color: #ffffff;
+}
+
+header h1, nav{
+  font-size: 10px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: middle;
+}
+header h1{
+  text-align: left;
+  
+}
+nav ul{
+  padding-left:15px ;
+  list-style: none;
+}
+nav li{
+  display: inline-block;
+  padding: 0.3em;
+}
+nav a{
+  color: rgba(255, 255, 255, 0.643);
+  display: block;
+  font-size: 1.2em;
+  padding: 0.2em;
+  margin-left: 20px;
+}
+nav a:hover{
+  
+  border-radius:  0 0.5em 0 0.5em;
+}
+.logo{
+  height: 70px;
+  padding: 10px;
+}
+.espacio{
+  margin-left: 10%;
+  margin-right: 10%;
+ 
+}
+header:hover {
+  background-color: rgb(5, 15, 45);
+  padding: 15px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  margin-right: 20px;
+}
+
+/*este de abajo es el encargado de todo los colores al hacer hover en la barra de notificacion*/
+
+header:hover ul li a {
+  color: rgba(255, 255, 255, 0.678);
+  
+}
+/*al hacer hover en la barra de navegacion cambia la letra blanco*/
+
+header:hover .ri {
+  color: rgba(255, 255, 255, 0.9);
+ /* y el fondo del boton cambia  a negro*/
+}
+
+
+
+
+
+nav .link-active a {
+  color: #f3e0e0 !important;
+  border-bottom: solid 2px  #ffffff ;
+}
+nav ul .link-active a:after {
+  
+  border-bottom: solid 2px  #ffffff ;
+}
+
+
+nav ul li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+
+}
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 0%;
+  background-color: transparent;
+}
+nav ul li a:hover {
+  text-decoration: none;
+  color: #ffffff;
+  border-bottom: solid 2px  #ffffff ;
+}
+
+
+nav ul li a:hover:after {
+  width: 100%;
+  background-color: #ffffff;
+}
+nav ul li a:hover:before {
+  width: 0%;
+  background-color: #ffffff;
+}
+
+.nav-overlay {
+  background-color: white;
+  color: white;
+  border: 1px solid rgba(45, 38, 38, 0.2);
+}
+.nav-overlay .logo img {
+  width: 100%;
+}
+.nav-overlay ul {
+  margin-top: 6px;
+}
+.nav-overlay ul li a {
+  color: rgb(255, 255, 255);
+}
+
+#namecole{
+  font-size: 1.3em;
+}
+
+.proi{
+  margin-top: -5px;
+}
+header nav .ri{
+  background-color: black;
+  color: hsl(218, 84%, 90%);
+  padding: 10px;
+  border-radius: 10px 0px ;
+  border: solid 2px #5e86c7;
+  
+}
+header nav .ri:hover{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 0px 10px;
+  border: solid 2px #5e86c7
+  
+}
+header nav .ri:after {
+  border-bottom: solid 2px  #ffffff ;
+}
+
+
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  transition: background-color 0.3s ease;
+  top: 0;
+}
+
+.header.fixed {
+  background-color: rgb(5, 15, 45);
+  border-bottom: 1px solid rgb(255, 255, 255);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* r /////////////////////////////////////
+  //////////Footer y estilos //////////
+///////////////////////////////////// r */
+
+
+footer {
+    margin-top: 10px;
+    max-width: 100%;
+    height: 40%;
+    background-color: rgba(6, 10, 15, 0.50);
+    display: flex;
+    padding: 0px 0px ;
+    -webkit-clip-path: polygon(0% 15%, 50% 0%, 100% 15%, 100% 100%, 0% 100%);
+    -o-clip-path: polygon(0% 15%, 50% 0%, 100% 15%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 15%, 50% 0%, 100% 15%, 100% 100%, 0% 100%);
+  
+    display: flex;
+    justify-content: center; /* centra horizontalmente */
+    align-items: center;
+  }
+  .containerfoter{
+    max-width: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center; /* centra horizontalmente */
+    align-items: center; /* centra verticalmente */
+  }
+  footer p {
+    margin: 0px;
+    padding: 0px;
+    
+  }
+  footer .white {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+  }
+  footer ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+  }
+  footer ul li {
+    padding: 0px;
+    margin: 0px;
+    color: rgba(255, 255, 255);
+  }
+  footer hr {
+    border-radius: 10px;
+    background-color: whi;
+  }
+  .containerfoter{
+    max-width: 100%;
+    display: flex;
+  }
+  .col-xl-2{
+    width: 30%;
+    margin-top: 50px;
+    float: left;
+   
+  }
+  .imgfooter img{
+    margin-top: 48px;
+    width: 125px;
+    margin-right: 70px;
+    margin-left: 70px;
+  }
+  
+  .col-xl-4{
+    width: 35%;
+    margin-top: 50px;
+    float: left;
+    width: 30%;
+  }
+  .cuadro2{
+    margin-right: 60px;
+  }
+  .copy {
+    padding: 10px 0px;
+    background-color: rgba(6, 10, 15, 0.50);
+    
+  }
+  .containercopy {
+    text-align: center;
+  }
+  
+  .copy p, .copy a {
+    margin: 0PX;
+    padding: 0PX;
+    color: rgb(255, 255, 255);
+  
+  }
+  .copy a {
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+  }
+  .copy a:hover {
+    opacity: 1;
+    color: yellow;
+  }
+  
+  .social-networks {
+    margin-top: 5px;
+  }
+  .social-networks li {
+    display: inline-block;
+    position: relative;
+    margin: 0px 7px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    cursor: pointer;
+  }
+  .social-networks li i {
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    -webkit-transform: rotate(0deg) translate(-3px, 3px);
+    transform: rotate(0deg) translate(-3px, 3px);
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+  }
+  .social-networks li:hover {
+    -webkit-transform: rotate(45deg);
+    transform: ratate(45deg);
+    background-color: rgb(255, 255, 255);
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+  }
+  .social-networks li:hover i {
+    color: #000000;
+    -webkit-transform: rotate(-45deg) translate(-3px, 3px);
+    transform: rotate(-45deg) translate(-3px, 3px);
+  }
+  
+  .cuadro{
+    max-width: 33%;
+  }
+  /*Fin de Estilos de pie de pagina*/

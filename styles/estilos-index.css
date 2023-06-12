@@ -1,0 +1,658 @@
+
+/* r ////////////////////////////////////////
+      //////// Apartado Bienvenida ///////
+//////////////////////////////////////// r */
+.contenedor{
+    margin-top: 10%;
+    max-width: 100%;
+  }
+  
+  .title{
+    text-align: left;
+    font-size: 2em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .textbienvenida{
+    text-align: justify;
+    font-size: 1.2em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .center{
+    margin: 5%;
+  }
+  .flecha img{
+    margin-top: 2%;
+    max-width: 65px;
+    max-height: 65px;
+  }
+  /*Fin de Estilos Bienvenida*/
+  
+  
+  
+  
+  /* r ////////////////////////////////////////
+        //////// Apartado Noticias ///////
+  //////////////////////////////////////// r */
+  
+  .contenedornoticias{
+    max-width: 100%;
+  }
+  .center #tnoticia{
+    max-width: 100%;
+    text-align: center;
+    font-size: 32px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .textnoticia{
+    text-align: justify;
+    font-size: 0.8em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  
+  .noticia1completa {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+    border-radius: 0.5em;
+    overflow: hidden;
+    flex-basis: 45%;
+    padding: 2%;
+    height: 25em;
+  }
+  #tnoticia{
+    margin-top: 8%;
+    margin-bottom: 0px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .imgnoticia1 {
+    max-width: 50%;
+  }
+  
+  
+  
+  .noticia2completa {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2%;
+    border-radius: 0.5em;
+    margin-bottom: 10px;
+    overflow: hidden;
+    height: 400px;
+    flex-basis: 45%;
+    margin-left: 2%;
+    height: 25em;
+  }
+  
+  .imgnoticia2 {
+    max-width: 50%;
+    border: 2px solid black;
+  }
+  
+  section#contenido{
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 ;
+    max-width: 100%;
+    padding: 2%;
+  
+  }
+  
+  /*Fin de Estilos Noticias*/
+  
+  /*Fin de la barra de navegacion*/
+  
+  /*a //////////////////////////////
+  ///////////Resposibidad//////////
+  /////////////////////////////// */
+  @media (max-width: 320px) {
+    /* Estilos para pantallas con un ancho máximo de 320px (dispositivos móviles muy pequeños) */
+   /*barra de navegacion*/
+        .logo, #namecole, ul{
+            margin-top: 10px;
+        }
+        header nav .checkbtn{
+            display: block;
+        }
+        nav ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #060f2f;
+            top: 80px;
+            left: -150%;
+            text-align: center;
+            transition: all .5s;
+            
+        }
+        header nav ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        header nav ul li a{
+            font-size: 20px;
+        }
+
+        header nav #check:checked ~ ul{
+            left:0;
+        }
+
+        /*barra de navegacion*/
+        .logo, h1.namecole, ul{
+            margin-top: 10px;
+        }
+
+        body header h1.espacio{
+            margin-left: 2%;
+
+        }    
+        body header nav ul li a{
+            font-size: 10px;
+        }
+
+        /*pagina index*/
+        body div div div h2.title {
+            margin-top: 40%;
+            font-size: 1em;
+        }
+
+        body div div.textbienvenida{
+            font-size: 0.8em;
+        }
+        body div div.noticia1completa, div.noticia2completa{
+            font-size: 0.8em;
+        }
+        /*pie de pagina*/
+        footer {
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .containerfoter {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cuadro {
+            width: 80%;
+            max-width: 350px;
+            margin-bottom: 20px;
+        }
+
+        body div.todonosotros{
+            margin-top: 55%;
+        }
+    }
+    
+    @media (max-width: 480px) {
+    /*barra de navegacion*/
+    /* Estilos para pantallas con un ancho máximo de 480px (dispositivos móviles pequeños) */
+    /*barra de navegacion*/
+    header{
+        display: flex;
+    }
+    .logo, #namecole, ul{
+        margin-top: 10px;
+    }
+    header nav .checkbtn{
+        display: block;
+    }
+    
+    body header nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #060f2f;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    body header nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        
+    }
+    body header nav ul li a{
+        font-size: 35px;
+
+    }
+    
+    body header nav #check:checked ~ ul{
+        left:0%;
+    }
+    
+     /*barra de navegacion*/
+     .logo, h1.namecole, ul{
+        margin-top: 10px;
+    }
+    
+    
+    body header nav ul li a{
+        font-size: 10px;
+    }
+    
+
+    
+    /*pagina index*/
+    body div div div h2.title {
+        margin-top: 35%;
+        font-size: 1em;
+    }
+    body header h1.espacio{
+        margin-left: 2%;
+
+    } 
+    body div div.textbienvenida{
+        font-size: 0.8em;
+    }
+
+    body div div section div div div.noticia1, div.noticia2{
+        font-size: 0.82em;
+    }
+    body div div section div div div.noticia1 p.textnoticia, div.noticia2 p.textnoticia{
+        font-size: 0.67em;
+    }
+      
+
+    /*pie de pagina*/
+    footer{
+        display: flex;
+    justify-content: center; /* centra horizontalmente */
+    align-items: center;
+    }
+    footer div.containerfoter{
+        margin-top: 10%;
+        display: flex;
+    justify-content: center; /* centra horizontalmente */
+    align-items: center;
+    }
+    footer div div.cuadro{
+        max-width: 100%;
+        width: 100%;
+        font-size: 0.5em;
+        margin: 0%;
+        padding: 0%;
+    }
+    footer div div div.white{
+        font-size: 0.5em;
+        margin: 0%;
+        padding: 0%;
+    }
+    footer div div.imgfooter img{
+        width: 50px;
+        margin: 0%;
+        padding: 0%;
+    }
+    body div div div div.small{
+        font-size: 0.7em;
+    }
+    }
+    
+    @media (max-width: 768px) {
+    /*barra de navegacion*/
+    /*barra de navegacion*/
+    .logo, #namecole, ul{
+        margin-top: 10px;
+    }
+    header nav .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #060f2f;
+        top: 80px;
+        left: -150%;
+        text-align: center;
+        transition: all .5s;
+        
+    }
+    header nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    header nav ul li a{
+        font-size: 20px;
+    }
+    
+    header nav #check:checked ~ ul{
+        left:0;
+    }
+    
+     /*barra de navegacion*/
+     .logo, h1.namecole, ul{
+        margin-top: 10px;
+    }
+    
+    body header h1.espacio{
+        margin-left: 35%;
+
+    }    
+    body header nav ul li a{
+        font-size: 10px;
+    }
+    
+    /*pagina index*/
+    body div div div.title {
+        margin-top: 30%;
+        font-size: 1em;
+    }
+
+    body div div.textbienvenida{
+        font-size: 0.8em;
+    }
+    body div div.noticia1completa, div.noticia2completa{
+        font-size: 0.8em;
+    }
+    /*pie de pagina*/
+    footer {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .containerfoter {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cuadro {
+        width: 80%;
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+
+    body div.todonosotros{
+        margin-top: 55%;
+    }
+    }
+    
+        
+    @media (max-width: 858px){
+        /*barra de navegacion*/
+        .logo, #namecole, ul{
+            margin-top: 10px;
+        }
+        header nav .checkbtn{
+            display: block;
+        }
+        nav ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #060f2f;
+            top: 80px;
+            left: -150%;
+            text-align: center;
+            transition: all .5s;
+            margin-left: -5%;
+        }
+        header nav ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        header nav ul li a{
+            font-size: 20px;
+        }
+        
+        header nav #check:checked ~ ul{
+            left:0;
+        }
+        
+         /*barra de navegacion*/
+         .logo, h1.namecole, ul{
+            margin-top: 10px;
+        }
+        
+        body header h1.espacio{
+            margin-left: 35%;
+
+        }    
+        body header nav ul li a{
+            font-size: 10px;
+        }
+        
+        /*pagina index*/
+        body div div div.title {
+            margin-top: 20%;
+            font-size: 1em;
+        }
+
+        body div div.textbienvenida{
+            font-size: 0.8em;
+        }
+        body div div.noticia1completa, div.noticia2completa{
+            font-size: 0.8em;
+        }
+        /*pie de pagina*/
+        footer {
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .containerfoter {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .cuadro {
+            width: 80%;
+            max-width: 350px;
+            margin-bottom: 20px;
+        }
+    
+        body div.todonosotros{
+            margin-top: 55%;
+        }
+    }
+    
+    @media (max-width: 952px){
+        /*barra de navegacion*/
+        .logo, h1.namecole, ul{
+            margin-top: 10px;
+        }
+        body header .logo{
+            height: 35px;
+            padding: 10px;
+        }
+        body header .espacio{
+            margin-left: 5%;
+            margin-right: 5%;
+        }    
+        body header nav ul li a{
+            font-size: 10px;
+        }
+        
+        /*pagina index*/
+        body div div div.title {
+            margin-top: 20%;
+            font-size: 1.5em;
+        }
+
+        body div div.textbienvenida{
+            font-size: 0.8em;
+        }
+        body div div.noticia1completa, div.noticia2completa{
+            font-size: 0.8em;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        /*barra de navegacion*/
+    /* Estilos para pantallas con un ancho máximo de 1280px (pantallas de escritorio medianas) */
+    
+    .logo, #namecole, ul{
+        margin-top: 10px;
+    }
+    .logo{
+        height: 30px;
+        padding: 10px;
+    }
+    .espacio{
+        margin-left: 5%;
+        margin-right: 5%;
+    }    
+    header nav ul li a{
+        font-size: 10px;
+    }
+    /*pagina index*/
+    body div div.title {
+        margin-top: 10%;
+        font-size: 1em;
+    }
+
+    body div div.textbienvenida{
+        font-size: 0.8em;
+    }
+    body div div.noticia1completa, div.noticia2completa{
+        font-size: 0.8em;
+    }
+    }
+
+    @media (max-width: 1024px) {
+        /*barra de navegacion*/
+    /* Estilos para pantallas con un ancho máximo de 1024px (tabletas y pantallas más pequeñas de escritorio) */
+    header .logo, #namecole, ul{
+        margin-top: 10px;
+    }
+    header .logo{
+        height: 30px;
+        padding: 10px;
+    }
+    .espacio{
+        margin-left: 5%;
+        margin-right: 5%;
+    }    
+    header nav ul li a{
+        font-size: 8px;
+    }
+    /*pagina index*/
+    body div div.title {
+        margin-top: 10%;
+        font-size: 1em;
+    }
+
+    body div div.textbienvenida{
+        font-size: 0.8em;
+    }
+    body div div.noticia1completa, div.noticia2completa{
+        font-size: 0.8em;
+    }
+    }
+    
+    @media (max-width: 1280px) {
+        /*barra de navegacion*/
+    /* Estilos para pantallas con un ancho máximo de 1280px (pantallas de escritorio medianas) */
+    
+    
+    .logo, #namecole, ul{
+        margin-top: 10px;
+    }
+    .logo{
+        height: 30px;
+        padding: 10px;
+    }
+    .espacio{
+        margin-left: 5%;
+        margin-right: 5%;
+    }    
+    header nav ul li a{
+        font-size: 10px;
+    }
+    /*pagina index*/
+    body div div.title {
+        margin-top: 10%;
+        font-size: 0.9em;
+    }
+
+    body div div.textbienvenida{
+        font-size: 0.8em;
+    }
+    body div div.noticia1completa, div.noticia2completa{
+        font-size: 0.8em;
+    }
+    }
+
+    @media (max-width: 1440px) {
+        /*barra de navegacion*/
+    /* Estilos para pantallas con un ancho máximo de 1440px (pantallas de escritorio más grandes) */
+    .logo, #namecole, ul{
+        margin-top: 10px;
+    }
+    .logo{
+        height: 50px;
+        padding: 10px;
+    }
+    .espacio{
+        margin-left: 5%;
+        margin-right: 5%;
+    }    
+    header nav ul li a{
+        font-size: 12px;
+    }
+    
+    /*pagina index*/
+    body div div.title {
+        margin-top: 10%;
+        font-size: 1.5em;
+    }
+
+    body div div.textbienvenida{
+        font-size: 1em;
+    }
+    body div div.noticia1completa, div.noticia2completa{
+        font-size: 1em;
+    }
+    }
+    
+    @media (min-width: 1441px) {
+        /*barra de navegacion*/
+    /* Estilos para pantallas con un ancho mínimo de 1441px (pantallas de escritorio muy grandes) */
+    .logo, #namecole, ul{
+        margin-top: 10px;
+    }
+    .logo{
+        height: 80px;
+        padding: 10px;
+    }
+    .espacio{
+        margin-left: 7%;
+        margin-right: 7%;
+    }    
+    header nav ul li a{
+        font-size: 15px;
+    }
+
+    /*pagina index*/
+    body div div.title {
+        margin-top: 10%;
+        font-size: 2.0em;
+    }
+
+    body div div.textbienvenida{
+        font-size: 1.4em;
+    }
+    body div div.noticia1completa, div.noticia2completa{
+        font-size: 1.4em;
+    }
+    
+
+    
+
+}
+
